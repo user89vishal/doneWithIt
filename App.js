@@ -8,9 +8,20 @@ import AppButton from './apps/components/AppButton';
 import Card from './apps/components/Card';
 import ListingDetailsScreen from './apps/screens/ListingDetailsScreen';
 import MessagesScreen from './apps/screens/MessagesScreen';
+import MyAccountScreen from './apps/screens/AccountScreen';
+import AppScreen from './apps/components/Screen';
+
+import Icon from './apps/components/Icon';
+import ListItem from './apps/components/ListItem';
+import AccountScreen from './apps/screens/AccountScreen';
+import ListingScreen from './apps/screens/ListingScreen';
 
 function App() {
-  return <MessagesScreen />;
+  return (
+    <AppScreen>
+      <ListingScreen />
+    </AppScreen>
+  );
 }
 
 export default App;
